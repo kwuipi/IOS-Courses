@@ -16,10 +16,19 @@
 import Foundation
 import XCTest
 let array: [Int]=[1,2,3,4]
+extension Int: Sequence {
+    public func makeIterator() -> CountableRange<Int>.Iterator {
+        return (0..<self).makeIterator()
+    }
+}
 public func rotated(array: inout [Int], rotations: Int) -> [Int] {
+    var i = 1
     var arr = array
+    for i in 2 {
     let last = arr.removeLast()
     arr.insert(last, at : 0)
+    print(arr)
+    }
     return arr
 }
 /*:
