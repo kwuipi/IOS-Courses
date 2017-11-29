@@ -15,7 +15,6 @@
  */
 import Foundation
 import XCTest
-let array: [Int]=[1,2,3,4]
 extension Int: Sequence {
     public func makeIterator() -> CountableRange<Int>.Iterator {
         return (0..<self).makeIterator()
@@ -23,14 +22,14 @@ extension Int: Sequence {
 }
 public func rotated(array: inout [Int], rotations: Int) -> [Int] {
     var i = 1
-    var arr = array
-    for i in 2 {
-    let last = arr.removeLast()
-    arr.insert(last, at : 0)
-    print(arr)
+    for i in rotations{
+    let rotations = array.removeLast()
+    array.insert(rotations, at : 0)
+    print(array)
     }
-    return arr
+    return array
 }
+rotated(array: &[1,2,3,4,5,6], rotations: 3)
 /*:
  Данный класс тестирует результаты работы `func rotated(array: inout [Int], rotations: Int) -> [Int]`.
  

@@ -14,28 +14,11 @@ let number = 9
 public func solution(for number: Int) -> Int {
     var max_gap = 0
     var current_gap = 0
-    var n =  number
-    while n > 0 && n % 2 == 0
-    {
-        n /= 2
-    }
-    while n > 0
-    {
-        n/=2
-        if n % 2 == 1
-        {
-            if current_gap > max_gap
-            {
-                max_gap = current_gap
-            }
-            current_gap = 0
-        }
-        else {
-            current_gap += 1
-        }
-    }
-    print (max_gap)
-    return max_gap
+    var n = number
+    let binaryNumber = String(number, radix: 2)
+    let arrayOfDigits = Array (binaryNumber)
+    print (arrayOfDigits)
+    return 0
 }
 
 /*:
