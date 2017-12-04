@@ -51,6 +51,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tv-LR-Faj">
                                         <rect key="frame" x="257.5" y="1" width="84.5" height="85.5"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="operationWithButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0qy-Ja-uvj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl7-jb-8z8">
                                         <rect key="frame" x="1" y="87.5" width="84.5" height="86"/>
@@ -76,6 +79,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCn-lp-U0N">
                                         <rect key="frame" x="257.5" y="87.5" width="84.5" height="86"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="operationWithButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9f-JD-BAg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aF-z6-fMi">
                                         <rect key="frame" x="1" y="174.5" width="84.5" height="85.5"/>
@@ -101,6 +107,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFP-0B-QbI">
                                         <rect key="frame" x="257.5" y="174.5" width="84.5" height="85.5"/>
                                         <state key="normal" title="×"/>
+                                        <connections>
+                                            <action selector="operationWithButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVC-Ru-N5y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHK-XU-hpV">
                                         <rect key="frame" x="1" y="261" width="84.5" height="86"/>
@@ -126,6 +135,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df8-6d-A5P">
                                         <rect key="frame" x="257.5" y="261" width="84.5" height="86"/>
                                         <state key="normal" title="÷"/>
+                                        <connections>
+                                            <action selector="operationWithButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tEj-QL-hfK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIX-Z5-gdf">
                                         <rect key="frame" x="1" y="348" width="84.5" height="85.5"/>

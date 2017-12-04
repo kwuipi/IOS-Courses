@@ -39,13 +39,36 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resultButtonTapped(_ sender: Any) {
-        guard let resultNumber = Double(resultArea.text!) else {
-            return
+        if let resultNumber = Double(resultArea.text!) {
+            calc.nextNumber(resultNumber)
+            if calc.nextOperation == CaclutorOperation.division && resultNumber == 0 {
+                resultArea.text = "Error"
+            }
+            else{
+                calc.nextNumber(resultNumber)
+                resultArea.text = String(calc.result!)
+            }
         }
-        calc.nextNumber(resultNumber)
-        resultArea.text = String(calc.result!)
     }
     
+    @IBAction func operationWithButtonTapped(_ sender: Any) {
+        let button = sender as! UIButton
+        let inputValueButton = Double(resultArea.text!)
+        calc.inputValue = inputValueButton!
+        switch button.titleLabel!.text!{
+        case "+":
+            calc.nextOperation = .plus
+        case "-":
+            calc.nextOperation = .minus
+        case "×":
+            calc.nextOperation = .multiplie
+        case "÷":
+            calc.nextOperation = .division
+        default:
+            resultArea.text = "Error"
+        }
+        resultArea.text = "0"
+    }
     
     @IBAction func operationWithResultButtonTapped(_ sender: Any) {
         let button = sender as! UIButton
